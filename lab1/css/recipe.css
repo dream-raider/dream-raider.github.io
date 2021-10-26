@@ -39,11 +39,13 @@ body{
     text-decoration: line-through;
 }
 
-#links ul{
+.links ul{
     padding: 0;
 }
-#links ul li{
+.links ul li{
     list-style: none;
+}
+.links ul li a{
     color: #A4A400;
 }
 
