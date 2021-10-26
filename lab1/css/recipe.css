@@ -54,3 +54,7 @@ body{
     list-style: none;
     padding-left: 3%;
 }
+
+div#pie-image{
+    content: url("http://mumstudents.org/cs472/2014-09/Homework/1/pie.jpg");
+}
