@@ -41,18 +41,19 @@ body{
 .links ul{
     padding: 0;
 }
-.links ul li{
-    list-style: none;
-}
+
 .links ul li a{
     color: #A4A400;
 }
 
- .pie-sign>li{
+ ul.pie-sign>li{
     background-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif");
     background-repeat: no-repeat;
     list-style: none;
     padding-left: 3%;
+}
+.links>ul>li{
+    list-style: none;
 }
 
 div#pie-image{
