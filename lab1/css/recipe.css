@@ -23,7 +23,6 @@ h1 {
 }
 body{
     color: #404040;
-    background-color: white;
     background-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg");
 }
 
@@ -49,15 +48,7 @@ body{
     color: #A4A400;
 }
 
-
- #ingredients ul li{
-    background-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif");
-    background-repeat: no-repeat;
-    list-style: none;
-    padding-left: 3%;
-}
-
-#directions ul li{
+ .pie-sign>li{
     background-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif");
     background-repeat: no-repeat;
     list-style: none;
