@@ -1,0 +1,143 @@
+body{
+    margin: 0; padding: 0; font-size: 16px;
+    font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif; line-height: 26px;
+}
+ul, ol, p, h1, h2, h3, h4, h5, h6{
+    margin: 0; padding: 0;
+}
+
+.right{
+    float:right;
+}
+    header{
+        padding: 2%; width: 96%;
+        font-size: 27px; color: turquoise; text-align: center;
+    }
+
+    header span{
+        font-size: 20px; color: lightseagreen;
+    }
+    @media screen and (max-width : 650px) {
+        header{
+            padding: 6%; width: 88%;
+        }
+    }
+    h4 a{
+        text-shadow: 1px 1px;
+        color:lightcoral;
+
+
+    }
+    
+    .section{
+        padding: 1%; justify-content:space-between;        background-image: linear-gradient(#3676B6, lightcyan);
+
+    }
+    .course-list{
+        display: block; width: 96%;padding: 1%; margin: 1%;
+    }
+    .article-title{
+        padding: 1% 2%;
+        background-image: linear-gradient(skyblue, lightcyan);
+        border-radius: 100px;
+    }
+    .course-list ul li{
+        list-style: none; margin: 0.5%; border-radius: 5%;
+    }
+    .course-list ul li a{
+        text-decoration: none; display: block; width: 98%; padding: 1%; background-color:lightcyan;
+        color: black; font-weight: bold;    border-radius: 300px;
+    }
+    .course-list ul li a:hover{
+        background-color: lightyellow;
+    }
+    @media screen and (max-width : 650px) {
+        .article-title{ padding: 3%; }
+        .course-list ul li a{ width: 94%; padding: 3%; }
+    }
+
+
+    .fav-movies{
+        width: 96%;  padding: 1%; margin: 1%;
+    }
+    .fav-movies ol{
+        margin-left: 2%; display: flex; flex-direction: column-reverse;  margin-right: 2%;
+    }
+    .fav-movies ol li{
+        padding: 1%; background: rgb(176, 225, 255); margin: 0.3% 0;font-weight: bold;    border-radius: 300px;
+    }
+    .fav-movies ol li a{
+        text-decoration: none; 
+    }
+    .fav-movies ol li a{
+        float: right; color: rgb(0, 66, 141); font-weight: bold;text-decoration: overline;
+    }
+    .fav-movies ol li a:hover{
+        float: right; color: darkred;
+    }
+    .fav-movies ol li:hover{
+        box-shadow: 5px 5px 50px grey;
+    }
+    @media screen and (max-width : 650px) {
+        .fav-movies ol li{ padding: 3%; list-style: none; }
+        .course-list ul li a{ width: 94%; padding: 3%; }
+    }
+
+    .my-moods div{
+        display: flex; justify-content: space-between;
+    }
+    .my-moods div div{
+        width: 48%; padding: 1%; box-shadow: 10px 10px 20px grey;
+    }
+    .my-moods div div img{
+        width: 100%; transition: transform 1s;
+    }
+    .my-moods div div img:hover{
+        transform:   scale(0.5); 
+    }
+    @media screen and (max-width : 650px) {
+        .my-moods div{
+            flex-direction: column;
+        }
+        .my-moods div div{
+            width: 100%;
+        }
+    }
+
+    .my-neighbor>h2>span{
+color: palevioletred;
+    }
+    .my-neighbor div{
+        display: flex; justify-content: space-between;
+    }
+    .my-neighbor div div{
+        width: 46%; padding: 1%; margin: 1%;  font-weight: bold;
+        font-size: 22px; font-family: cursive; 
+    }
+    @media screen and (max-width : 650px) {
+        .my-neighbor div{
+            flex-direction: column;
+        }
+        .my-neighbor div div{
+            width: 95%; padding: 2%;
+        }
+    }
+
+    footer{
+        background-color: #3676B6; padding: 2%; color: wheat; display: flex; justify-content: space-around;
+    }
+    footer .validator-block{
+        width: 50%;
+    }
+    footer .copyright-block{
+        width: 50%; text-align: right;
+    }
+
+    @media screen and (max-width : 650px) {
+        footer{
+            flex-direction: column;
+        }
+        footer .validator-block, footer .copyright-block{
+            width: 96%; text-align: center; margin: 2%;
+        }
+    }
