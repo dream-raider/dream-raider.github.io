@@ -129,15 +129,12 @@ color: palevioletred;
     footer .validator-block{
         width: 50%;
     }
-    footer .copyright-block{
-        width: 50%; text-align: right;
-    }
 
     @media screen and (max-width : 650px) {
         footer{
             flex-direction: column;
         }
-        footer .validator-block, footer .copyright-block{
+        footer .validator-block{
             width: 96%; text-align: center; margin: 2%;
         }
     }
