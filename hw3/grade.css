@@ -1,0 +1,36 @@
+ /* Erika Joshi - Homework 3
+    Retrieve grades using HTML form */
+ 
+body{
+  margin: 0;
+  padding:0;
+  background-color: white;
+}
+h1{
+  background-image: linear-gradient(#3676B6, rgb(123, 195, 195));
+  color: black;
+  text-align: center;
+  padding: 20px 0px;
+  margin: 0px;
+}
+label{
+  padding: 5px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight:bold;
+}
+.info{
+
+  width:300px;
+  height:30px;
+}
+#form,footer{
+  padding: 40px 20px;
+}
+
+#submit{
+  padding: 10px 20px;
+  background-image: linear-gradient(#3676B6, rgb(123, 195, 195));
+  color: white;
+  border-radius: 10px;
+}

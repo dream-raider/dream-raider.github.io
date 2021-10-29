@@ -1,0 +1,71 @@
+<!-- Erika Joshi - Homework 3
+      Retrieve grades using HTML form
+  -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="grade.css">
+
+  <title>My Grade</title>
+
+</head>
+
+<body>
+  <div id="header">
+    <h1>Retrieve Your Grade</h1>
+  </div>
+
+  <div id="form">
+    <form action="http://mumstudents.org/params.php" autocomplete="on">
+      <label for="name">Name </label>
+      <input type="text" class="info" name="name" placeholder="Enter your name"> <br><br>
+      <label for="id">Student ID </label>
+      <input type="text" class="info" name="id" placeholder="Enter your ID"> <br><br>
+
+      <label for="courses">Course grade to display </label>
+      <select id="courses" name="courses">
+        <option value="CS472">WAP</option>
+        <option value="CS525">WAA</option>
+        <option value="CS544">EA</option>
+        <option value="CS435">Algorithms</option>
+      </select>
+      <br><br>
+
+      <label>Select your Entry: </label>
+      <input type="radio" id="feb" name="entry" value="Feb-2021">
+      <label for="feb">Feb 2021 </label>
+      <input type="radio" id="may" name="entry" value="May-2021">
+      <label for="may">May 2021 </label>
+      <input type="radio" id="aug" name="entry" value="Aug-2021">
+      <label for="aug">August 2021 </label><br><br><br>
+
+
+
+      <input type="checkbox" id="mygrade" name="mine" value="show my grade">
+
+      <label>Check to confirm that you are retrieving only your grades</label>
+      <br>
+      <input type="submit" id="submit" value="Show my grade">
+
+    </form>
+    <br>
+    <a href="../index.html">Home</a>
+  </div>
+
+  <footer>
+    <div class="validator-block">
+      <a href="http://validator.w3.org/nu/?doc=https://dream-raider.github.io/hw3/grade.html" target="_blank">
+        <img src="https://manalabs.org/img/w3c-html.png" alt="HTML validator icon" />
+      </a>
+
+      <a href="http://jigsaw.w3.org/css-validator/validator?uri=https://dream-raider.github.io/hw3/grade.css"
+        target="_blank">
+        <img src="https://manalabs.org/img/w3c-css.png" alt="CSS validator icon" />
+      </a>
+    </div>
+
+  </footer>
+</body>
+
+</html>
