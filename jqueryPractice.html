@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        "use strict";
+        $(document).ready(function () {
+            /////////////////////////////////////////////////
+
+            $("h2:last").css("border", "2px dotted red");
+            $("h2:first").css("border", "3px solid red");
+
+            /////////////////////////////////////////////////
+            var newText = $("<p>"); //if "p", it selects the P tag inside div instead of replacing the all the content of p
+            newText.append("I am Red");
+            $("#box").html(newText);
+            newText.css("color", "red");
+
+            /////////////////////////////////////////////////
+            var clickMe = $("#clickMe");
+            clickMe.on("click", whenMouseIsClicked);
+            clickMe.on("mouseleave", whenMouseLeaves);
+
+            function whenMouseIsClicked() {
+                $("#box2").html("You clicked!");
+            }
+            function whenMouseLeaves() {
+                $("#box2").html("you left!");
+            }
+            /////////////////////////////////////////////////
+            $("#hitme").on("click", function () {
+                if ($("#show-hide").is(":visible")) {
+                    $("#hitme").html("Show");
+                    $("#show-hide").hide();
+                }
+                else {
+                    $("#hitme").html("Hide");
+                    $("#show-hide").show();
+                }
+            });
+            /////////////////////////////////////////////////
+
+
+            $(".hoverMe").hover(function () {
+                $(this).toggleClass("highlight");
+            })
+            /////////////////////////////////////////////////
+
+            $("body").append("<h5>Append H1</h5>");
+            /////////////////////////////////////////////////
+
+            $("#fadeIn").on("click", function () {
+                $("#fadeMe").fadeIn(3000, function () {
+                    alert("I am done fading in");
+                });
+            });
+            /////////////////////////////////////////////////
+
+            $("#slideUp").on("click", function () {
+                $("#slideData").slideUp("2000", "linear");
+            })
+
+            $("#slideDown").on("click", function () {
+                $("#slideData").slideDown(2000, "linear");
+            })
+            /////////////////////////////////////////////////
+
+
+
+        });
+    </script>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        .highlight {
+            text-shadow: 1px 1px #8b3030;
+        }
+
+        #fadeMe {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th>Jquery</th>
+            <th>Content</th>
+        </tr>
+        <tr>
+            <td> $("h2:first").css("border", "3px solid red");
+                <br>
+                $("h2:last").css("border", "2px dotted red");
+            </td>
+            <td>
+                <h2>Heading 2</h2>
+                <h2>Heading 3</h2>
+                <h2>Heading 4</h2>
+                <h2>Heading 5</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                var newText = $("< p>"); <br>
+                    newText.append("I am Red");<br>
+                    $("#box").html(newText);<br>
+                    newText.css("color", "red");
+
+            </td>
+            <td>
+                <div id="box">
+                    <p>I am Blue</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="clickMe">
+                    CLICKME!
+                </div>
+            </td>
+            <td>
+                <div id="box2">
+                    <p>I am Blue</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Hover</td>
+            <td>
+                <div class="hoverMe">
+                    Hover me
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="show-hide">
+                    <p>Show/Hide </p>
+                </div>
+            </td>
+            <td>
+                <button id="hitme">Hit Me!</button>
+
+            </td>
+        </tr>
+        <tr>
+            <td> <a href="#" id="fadeIn">Fade In </a></td>
+            <td>
+                <div id="fadeMe">F-A-D-E</div>
+            </td>
+        </tr>
+        <tr>
+            <td> <a href="#" id="slideUp">Slide In </a> | <a href="#" id="slideDown">Slide down </a></td>
+
+            <td>
+
+                <div id="slideData">Watch Me Slide!</div>
+
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
