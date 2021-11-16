@@ -13,14 +13,14 @@ $(document).ready(function () {
             $("#loader").show();
         }
         $.ajax({
+            data: { word: $word },
+            type: "POST",
             complete: function () {
                 // Set our complete callback, adding the .hidden class and hiding the spinner.
                 $("#loader").hide();
             },
-            data: { word: $word },
             success: successFunction,
-            type: "POST",
-            url: "http://localhost:2021/search"
+            url: "http://localhost:2021/search",
         });
     }
 
@@ -30,7 +30,7 @@ $(document).ready(function () {
             alert("Enter valid keyword to search");
         } else {
             for (let i = 0; i < parsedData.length; i++) {
-                $("ul").append("<li>${i + 1} (${parsedData[i].wordtype}) :: ${parsedData[i].definition}</li>");
+                $("ul").append(`<li>${i + 1} (${parsedData[i].wordtype}) :: ${parsedData[i].definition}</li>`);
             }
         }
 
